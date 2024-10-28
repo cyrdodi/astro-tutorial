@@ -13,8 +13,6 @@ const {frontmatter} = Astro.props;
   
   <p>Tags</p>
   <ul>
-    {frontmatter.tags.map(tag => {
-      <li>{tag}</li>
-    })}
+    {frontmatter.tags.map(tag => <li>{tag}</li>)}
   </ul>
 </BaseLayout>
